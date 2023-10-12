@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Survey Results</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+        <ul>
+            <li><a href="index.html" id="home-link">Home</a></li>
+            <li><a href="results.html" id="restaurant-link">Result</a></li>
+
+        </ul>
+    </nav>
+    
+    <ul>
+        <a style="color:white;   font-weight: bold;font-size: 16px; margin-right: 10px;" href="login.html">Logout</a>
+     </ul>
+</header>
+  <div class="container">
+    <h1>Survey Results</h1>
+    <div id="results">
+      <!-- Display questions with user answers and correct answers here -->
+    </div>
+    <a href="index.html">Go Back</a>
+  </div>
+  <script src="results.js"></script>
+   
+  <style>
+
+    
+header {
+    background-color: #ff5722;
+    color: white;
+    padding: 0px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+ body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+.tot1{
+  background-color:lightslategray;
+  padding: 1px;
+}
+.tot2{
+  background-color:lightgray;
+  padding: 1px;
+}
+.tot3{
+  background-color:lightcoral;
+  padding: 1px;
+}
+
+.container {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 20px;
+  transform: translateY(20px); /* Initial animation offscreen */
+  animation: slideIn 0.5s ease forwards; /* Animation for container entry */
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+#results {
+  margin-top: 20px;
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+}
+
+p {
+  margin: 10px 0;
+}
+
+a {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #007BFF;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+/* Keyframes for entry animation */
+@keyframes slideIn {
+  to {
+    transform: translateY(0);
+  }
+}
+
+
+  </style>
+</body>
+</html>

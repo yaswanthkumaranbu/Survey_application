@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Online Survey</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" id="home-link">Home</a></li>
+                <li><a href="results.html" id="restaurant-link">Result</a></li>
+
+            </ul>
+        </nav>
+        
+        <ul>
+            <a style="color:white;   font-weight: bold;font-size: 16px;  margin-right: 10px" href="login.html">Logout</a>
+         </ul>
+    </header>
+  <div class="container">
+    <h1>Online Survey</h1>
+    <form id="category-form">
+      <label for="category">Select a Category:</label>
+      <select id="category" name="category">
+        <option value="technical">Technical</option>
+        <option value="science">Science</option>
+        <option value="economic">Economic</option>
+      </select>
+      <button id="select-category">Select Category</button>
+    </form>
+    
+    <div id="question-form" style="display: none;">
+      <h2>Questions</h2>
+      <form id="survey-form">
+        <input type="hidden" id="category-value" name="category">
+        <div id="questions-container"></div>
+        <button id="submit-answers">Submit Answers</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+   
+  <style>
+
+    
+header {
+    background-color: #ff5722;
+    color: white;
+    padding: 0px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+    body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+  background: url(back.jpg)no-repeat center center fixed;
+    -webkit-background-size: cover;
+}
+
+.container {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 40px;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+#category-form,
+#question-form {
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin: 10px 0;
+  font-weight: bold;
+  color: #555;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  transition: border-color 0.3s;
+}
+
+select:focus {
+  border-color: #007BFF;
+}
+
+button {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#questions-container {
+  text-align: left;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin: 10px 0;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #007BFF;
+}
+
+#submit-answers {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+#submit-answers:hover {
+  background-color: #0056b3;
+}
+
+a {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #007BFF;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+  </style>
+</body>
+</html>

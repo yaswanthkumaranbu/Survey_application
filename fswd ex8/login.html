@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Form Design</title>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+</head> 
+<body>
+    <div class="all">
+ 
+    <div class="box">
+        
+        <h1>Login Here</h1>
+        <form name="myform" method="POST" onsubmit="return vfun()">
+            <p>Username</p>
+            <input type="text" required="" name="uname" placeholder="Enter Username">
+
+            <p>Password</p>
+            <input type="password" required="" name="upswd" placeholder="Enter Password">
+
+            <input type="submit" value="Login">
+        </form>
+    </div>
+</div>
+    <script>
+        function vfun() {
+            var uname = document.forms["myform"]["uname"].value;
+            var upswd = document.forms["myform"]["upswd"].value;
+
+            if (uname === "yaswanth" && upswd === "yas") {
+                alert("Login successful");
+                const newPageURL = "index.html";
+                window.location.href = newPageURL;  
+                return false; // Prevent form submission (optional, you can remove this line if you want to submit the form)
+            } else {
+                alert("Check the entered credentials");
+                return false; // Prevent form submission (optional, you can remove this line if you want to submit the form)
+            }
+        }
+
+
+        
+    </script>
+    <style>
+        body{
+    margin: 0;
+    padding: 0;
+    background: url(front.jpg)no-repeat center center fixed;
+    -webkit-background-size: cover;
+
+    font-family: sans-serif;
+}
+
+.box{
+
+ 
+    background: #f5f5f5;
+    color: red;
+    top: 50%;
+    right: 30%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 40px 30px;
+}
+
+
+
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+    color: black;
+}
+
+p{
+    color: #f49126;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+input{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+ input[type="text"], input[type="password"] ,input[type="email"]
+{
+    border: ridge;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #673ab7;
+    font-size: 16px;
+}
+
+input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #2196f3;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+
+}
+
+
+input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #0097a7;
+}
+
+a
+{
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 20px;
+    color: #069818;
+}
+
+
+a:hover
+{
+    color: red;
+}
+
+ .img{
+    background: #f5f5f5;
+    height:120px;
+    width: 130px;
+    border-radius: 100%;
+    position: fixed;
+   margin-left: 680px;
+   margin-top: 90px;
+   z-index:1;
+   border: 5px solid #f5f5f5;
+}
+
+
+
+
+    </style>
+</body>
+</html>
